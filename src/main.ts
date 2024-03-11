@@ -7,7 +7,7 @@ async function bootstrap() {
 
   // Definir as opções CORS
   const corsOptions: CorsOptions = {
-    origin: process.env.CORS_ORIGIN || 'http://localhost:3001',
+    origin: process.env.CORS_ORIGIN || '*',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
     credentials: true, // Permitir credenciais de cookies ou cabeçalhos
   };
